@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: hello-world
+  namespace: hello-world-test
   creationTimestamp: null
   labels:
-    app: hello-world
-  name: hello-world
+    app: hello-world-test
+  name: hello-world-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: hello-world-test
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: hello-world
+        app: hello-world-test
     spec:
       containers:
       - image: ghcr.io/gbrawl/node-hello-world:main

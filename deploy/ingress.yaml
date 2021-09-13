@@ -2,15 +2,15 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   labels:
-    app: hello-world
-  name: hello-world
-  namespace: hello-world
+    app: hello-world-test
+  name: hello-world-test
+  namespace: hello-world-test
 spec:
   rules:
-  - host: hello-world.apps.openshift.bvb.local
+  - host: hello-world-test.apps.openshift.bvb.local
     http:
       paths:
       - backend:
-          serviceName: hello-world
+          serviceName: hello-world-test
           servicePort: web
 ---

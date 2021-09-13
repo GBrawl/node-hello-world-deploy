@@ -3,9 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: hello-world
-  name: hello-world
-  namespace: hello-world
+    app: hello-world-test
+  name: hello-world-test
+  namespace: hello-world-test
 spec:
   ports:
   - name: web
@@ -13,7 +13,7 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: hello-world
+    app: hello-world-test
   type: ClusterIP
 status:
   loadBalancer: {}
