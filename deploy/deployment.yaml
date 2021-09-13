@@ -19,7 +19,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: ghcr.io/gbrawl/node-hello-world:main
+      - image: ghcr.io/gbrawl/node-hello-world@sha256:5cd5c5b3a8c9106b7cbd57457a75edd1a4dc978a7c4dfae487a12526973b624f
         name: hello-world
         resources: {}
         imagePullPolicy: Always
